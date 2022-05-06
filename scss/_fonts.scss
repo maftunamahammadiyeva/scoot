@@ -1,1 +1,54 @@
 //Shu yerda fontlar turadi!
+/* space-mono-regular - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/space-mono-v11-latin-regular.eot');
+  src:
+       url('../fonts/space-mono-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/space-mono-v11-latin-regular.woff2') format('woff2'),
+
+       url('../fonts/space-mono-v11-latin-regular.woff') format('woff'),
+
+       url('../fonts/space-mono-v11-latin-regular.ttf') format('truetype'),
+
+       url('../fonts/space-mono-v11-latin-regular.svg#SpaceMono') format('svg');
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/space-mono-v11-latin-700.eot');
+  src:
+       url('../fonts/space-mono-v11-latin-700.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/space-mono-v11-latin-700.woff2') format('woff2'),
+
+       url('../fonts/space-mono-v11-latin-700.woff') format('woff'),
+
+       url('../fonts/space-mono-v11-latin-700.ttf') format('truetype'),
+
+       url('../fonts/space-mono-v11-latin-700.svg#SpaceMono') format('svg');
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src:
+       url('../fonts/lexend-deca-v16-latin-regular.woff2') format('woff2'),
+
+       url('../fonts/lexend-deca-v16-latin-regular.woff') format('woff');
+}
+/* lexend-deca-500 - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 500;
+  src:
+       url('../fonts/lexend-deca-v16-latin-500.woff2') format('woff2'),
+
+       url('../fonts/lexend-deca-v16-latin-500.woff') format('woff');
+}
