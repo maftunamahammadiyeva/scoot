@@ -1,0 +1,113 @@
+.roll {
+  padding-bottom: 200px;
+  background-image: url("../../images/roll-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50%);
+
+
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-top: -155px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 155px;
+  }
+
+  &__item:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+  &__text-wrapper {
+    max-width: 445px;
+  }
+
+
+  &__heading {
+    margin: 0;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+
+  }
+
+  &__desc {
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    max-width: 445px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  &__img {
+    z-index: 1;
+  }
+}
+
+
+@media only screen and (max-width: 993px){
+  .roll {
+    padding-bottom: 104px;
+    background-image: none;
+
+    &__list {
+      margin-top: -123px;
+    }
+
+    &__item {
+      flex-direction: column-reverse;
+      margin-top: 126;
+    }
+
+    &__item:nth-child(even){
+      flex-direction: column-reverse;
+    }
+
+    &__text-wrapper{
+      margin-top: 56px;
+    }
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__desc {
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .roll {
+    padding-bottom: 120px;
+
+    &__list {
+      margin-top: -56px;
+    }
+
+    &__item {
+      margin-top: 56px;
+    }
+
+    &__heading {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &__desc {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+}
