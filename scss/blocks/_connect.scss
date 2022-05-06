@@ -1,0 +1,83 @@
+.connect {
+  padding: 102px 0;
+  background: #495567;
+  background-image: url("../images/connect-bitmap.png");
+  background-repeat: no-repeat;
+  background-position: calc(50%);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    margin: 0;
+    max-width: 415px;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link-g {
+    text-decoration: none;
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 993px){
+  .connect {
+    padding-top: 62px;
+    padding-bottom: 60px;
+    background-image: url("../images/connect-table-bg.png");
+
+    &__container{
+      flex-direction: column;
+    }
+
+    &__heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+    .connect{
+      padding: 88px 0;
+      background-image: url("../images/roll-mobile.png");
+
+      &__heading {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .connect{
+    padding-bottom: 70px;
+
+    &__wrapper{
+      display: flex;
+      align-items: baseline;
+    }
+
+    &__link{
+      width: 111px;
+    }
+
+    &__link-g {
+      margin-left: 12px;
+      width: 130px;
+    }
+  }
+}
