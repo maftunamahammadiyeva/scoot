@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../images/hero-backround.png");
+  background-image: url("../images/hero-backround.png");
   background-repeat: no-repeat;
   background-position: calc(50%);
   padding-top: 153px;
@@ -32,31 +32,85 @@
 
 }
 
-@media only screen and (max-width: 1200px){
-  .container {
-    max-width: 960px;
-  }
+// @media only screen and (max-width: 1200px){
+//   .container {
+//     max-width: 960px;
+//   }
 
-}
+// }
 
 @media only screen and (max-width: 992px){
-  .container {
-    max-width: 720px;
+  // .container {
+  //   max-width: 720px;
+  // }
+  .hero {
+    padding-top: 137px;
+    padding-bottom: 217px;
+
+    background-image: url("../images/hero-bacround-tablet.png");
+    background-repeat: no-repeat;
+    background-position: calc(50%);
+    background-size: contain;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__heading {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__wrapper {
+      margin-left: 0;
+    }
+
+    &__desc  {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+
   }
 }
 
-@media only screen and (max-width: 768px){
-  .container {
-    max-width: 540px;
-  }
-}
+// @media only screen and (max-width: 700px){
+//   .container {
+//     max-width: 540px;
+//   }
+
+// }
+
+
+
 
 @media only screen and (max-width: 576px){
-  .container {
-    max-width: 100%;
-  }
-}
+  // .container {
+  //   max-width: 100%;
+  // }
 
+  .hero {
+    padding-top: 119px;
+    padding-bottom: 179px;
+    background-image: url("../images/backround-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position: calc(50%);
+    background-size: contain;
+
+    &__heading {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -1.78571px;
+    }
+
+
+  }
+
+
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -66,8 +120,31 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
-  .hero{
-    background-image: url("../images/hero-backround@2x.png");
-  }
+  // .hero{
+    //   background-image: url("../images/hero-backround@2x.png");
 
-}
+    // }
+
+
+
+    @media only screen and (max-width: 992px){
+      // .container {
+      //   max-width: 720px;
+      // }
+      .hero {
+        background-image: url("../images/hero-bacround-tablet@2x.png");
+      }
+    }
+
+
+    @media only screen and (max-width: 576px){
+      // .container {
+      //   max-width: 100%;
+      // }
+
+      .hero {
+        background-image: url("../images/backround-hero-mobile@2x.png");
+      }
+    }
+
+  }
