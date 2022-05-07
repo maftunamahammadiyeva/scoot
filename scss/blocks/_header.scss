@@ -65,31 +65,18 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 100vh;
-    height: 1000%;
+    width: 200vh;
+    height: 200vh;
     background: black;
     opacity: 0.75;
   }
 }
 
-// @media only screen and (max-width: 1200px){
-//   .container {
-//     max-width: 960px;
-//   }
-// }
-
-// @media only screen and (max-width: 992px){
-//   .container {
-//     max-width: 720px;
-//   }
-// }
 
 @media only screen and (max-width: 700px){
-  // .container {
-  //   max-width: 540px;
-  // }
 
   .header {
+    padding: 34px 0;
     position: relative;
 
     &__container {
@@ -162,13 +149,3 @@
   display: block;
     z-index: 1;
 }
-
-
-
-
-// @media only screen and (max-width: 576px){
-//   .container {
-//     max-width: 100%;
-//   }
-
-// }

@@ -1,5 +1,4 @@
 .hero {
-  background: #495567;
   background-image: url("../images/hero-backround.png");
   background-repeat: no-repeat;
   background-position: calc(50%);
@@ -33,17 +32,9 @@
 
 }
 
-// @media only screen and (max-width: 1200px){
-//   .container {
-//     max-width: 960px;
-//   }
-
-// }
 
 @media only screen and (max-width: 992px){
-  // .container {
-  //   max-width: 720px;
-  // }
+
   .hero {
     padding-top: 137px;
     padding-bottom: 217px;
@@ -51,7 +42,7 @@
     background-image: url("../images/hero-bacround-tablet.png");
     background-repeat: no-repeat;
     background-position: calc(50%);
-    background-size: contain;
+    background-size: cover;
 
     &__container {
       display: flex;
@@ -77,20 +68,10 @@
   }
 }
 
-// @media only screen and (max-width: 700px){
-//   .container {
-//     max-width: 540px;
-//   }
-
-// }
-
-
 
 
 @media only screen and (max-width: 576px){
-  // .container {
-  //   max-width: 100%;
-  // }
+
 
   .hero {
     padding-top: 119px;
@@ -98,7 +79,7 @@
     background-image: url("../images/backround-hero-mobile.png");
     background-repeat: no-repeat;
     background-position: calc(50%);
-    background-size: contain;
+    background-size: cover;
 
     &__heading {
       font-weight: 700;
@@ -129,9 +110,7 @@ only screen and (                min-resolution: 2dppx) {
 
 
     @media only screen and (max-width: 992px){
-      // .container {
-      //   max-width: 720px;
-      // }
+
       .hero {
         background-image: url("../images/hero-bacround-tablet@2x.png");
       }
@@ -139,9 +118,6 @@ only screen and (                min-resolution: 2dppx) {
 
 
     @media only screen and (max-width: 576px){
-      // .container {
-      //   max-width: 100%;
-      // }
 
       .hero {
         background-image: url("../images/backround-hero-mobile@2x.png");
